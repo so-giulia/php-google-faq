@@ -114,7 +114,7 @@ main{
 }
 
 .faq{
-    margin-top:50px;
+    margin-top:65px;
     font-size: 14px;
     font-weight: lighter;
     line-height: 24px;
@@ -132,6 +132,21 @@ main{
 
 .faq p{
     padding-top: 20px;
+}
+
+.faq p a, .faq p a:hover, .faq p a:visited,
+.faq p a:active, .faq p a:focus{
+    color: #3367d6;
+    text-decoration: none;
+}
+
+.tblank::after{
+    font-family: "Font Awesome 5 Free";
+    content:"\f35d";
+    font-weight: 600;
+    color: #3367d6;
+    font-size:11px;
+    margin:0 4px;
 }
 
 /* Ol List */
@@ -179,4 +194,16 @@ footer .ul-reset a:active, footer .ul-reset a:visited{
 
 footer .ul-reset li{
     margin-right: 3px;
+}
+
+.speech-bubble{
+    font-size:15px;
+    color:cornflowerblue;
+    transform: scale(-1, 1);
+    margin-right:8px;
+    margin-top:4px;
+}
+
+#lang{
+    width:180px;
 }
