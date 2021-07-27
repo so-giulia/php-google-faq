@@ -1,3 +1,7 @@
+/* ————————————————————————————————————— */
+/* —————————————— Commons —————————————— */
+/* ————————————————————————————————————— */
+
 *{
     margin:0;
     padding:0;
@@ -5,5 +9,126 @@
 }
 
 body{
-    color:blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+.container{
+    max-width: 978px;
+    margin: 0 auto;
+}
+
+
+/* —————————————————————————————————— */
+/* —————————————— Flex —————————————— */
+/* —————————————————————————————————— */
+
+.flex-row{display: flex; flex-wrap: wrap;}
+.justify-between{justify-content: space-between;}
+.justify-evenly{justify-content: space-evenly;}
+.align-center{align-items: center;}
+
+
+
+/* —————————————————————————————————— */
+/* —————————————— Head —————————————— */
+/* —————————————————————————————————— */
+
+header{
+    color:#5f6368;
+}
+
+.head-padding{
+    padding:10px 20px;
+}
+
+.head-title-container img{
+    width:74px;
+}
+
+.head-title-container h2{
+    font-size:21px;
+    margin-left:6px;
+    font-weight:400;
+}
+
+.user-container img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.user-container i{
+    font-size:18px;
+}
+
+/* —————————————— Nav —————————————— */
+
+.main-nav{
+    border-bottom:1px solid rgba(95, 99, 104, .3);
+}
+
+ul.head-padding{
+    padding-top:0;
+}
+
+.ul-reset{
+    list-style: none;
+    width: 750px;
+}
+
+header .ul-reset a,
+header .ul-reset a:hover, header .ul-reset a:focus,
+header .ul-reset a:active, header .ul-reset a:visited{
+    text-decoration: none;
+    color:#5f6368;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+a.nav-active, a.nav-active:hover,
+a.nav-active:focus, a.nav-active:visited,
+a.nav-active:active{
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
+    padding-bottom: 8px;
+}
+
+/* —————————————————————————————————— */
+/* —————————————— Main —————————————— */
+/* —————————————————————————————————— */
+
+main{
+    color:#3c4043;
+    padding:65px 0 30px 0;
+}
+
+/* ———————————————————————————————————— */
+/* —————————————— Footer —————————————— */
+/* ———————————————————————————————————— */
+
+footer{
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    line-height: 2.19;
+}
+
+footer .ul-reset a,
+footer .ul-reset a:hover, footer .ul-reset a:focus,
+footer .ul-reset a:active, footer .ul-reset a:visited{
+    font-size: 11px;
+    color: rgba(61,61,61,.8);
+    text-decoration: none;
+    opacity: .6;
+    font-weight: lighter;
+}
+
+footer .ul-reset li{
+    margin-right: 3px;
 }
