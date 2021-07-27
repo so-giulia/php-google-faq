@@ -32,14 +32,14 @@ $faqs = [
 
             "list" =>  [
                 [
-                    'La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:',
+                    ['La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:'],
 
                     "sublist" => [
                         'Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.',
                         'Google LLC, con sede negli Stati Uniti, per il resto del mondo.'
                     ],
 
-                    'La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.'
+                    ['La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.']
                 ]
             ],
 
@@ -147,23 +147,40 @@ $faqs = [
 
                 <!-- List -->
                 <?php foreach ($faq['a'] as $k => $a){
-
-                        //* IF ITS NORMAL TXT
+                        //* THE NORMAL P ABOVE AND UNDERNEATH
                         if($k == 'one' || $k == 'two'){ ?>
                         <!-- Normal text -->
                         <p><?php echo $a; ?></p>
                 <?php
-                        //close if + open else if
+                        //close if + open else if //*LIST OL*//
                         }else if($k == 'list'){ ?>
                             <ol>
-                            <?php foreach($a as $numeric_li){ 
-                                    foreach($numeric_li as $li){ ?>
-                                    
-                                    <li> <?php  echo $li;
-                                    //close numeric li foreach
-                                    } ?>
-                                    </li>
-                            <?php } ?>
+                                <?php foreach($a as $numeric_li){ 
+
+                                        foreach($numeric_li as $key => $li){
+                                            
+                                        if(is_numeric($key)){ 
+                                            foreach($li as $n_li){?>
+
+                                            <li> <?php  echo $n_li; ?></li>
+
+                                        <?php
+                                            //close foreach numeric li
+                                            }
+                                            //close if + open else
+                                            }else{?>
+                                                <ol type="a" class="sublist">
+                                                    <?php foreach($li as $a_li){ ?>
+                                                        <li> <?php  echo $a_li; ?></li>
+                                                    <?php } ?>
+                                                </ol>
+                                        <?php
+                                            //close else
+                                            }
+                                        //close main numeric li foreach
+                                        } ?>
+                                        
+                                <?php } ?>
                             </ol>
                 <?php
                         //close else if list

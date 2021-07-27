@@ -115,6 +115,9 @@ main{
 
 .faq{
     margin-top:50px;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 24px;
 }
 
 .faq:first-child{
@@ -128,10 +131,28 @@ main{
 }
 
 .faq p{
-    font-size: 14px;
-    font-weight: lighter;
-    line-height: 24px;
     padding-top: 20px;
+}
+
+/* Ol List */
+
+.faq ol li{
+    padding-left:15px;
+}
+
+.faq ol{
+    padding-top: 20px;
+    padding-left:15px;
+}
+
+/* Ol Sublist */
+
+.faq .sublist{
+    padding:10px 0 20px 30px;
+}
+
+.faq .sublist li{
+    padding-top:10px;
 }
 
 /* ———————————————————————————————————— */
