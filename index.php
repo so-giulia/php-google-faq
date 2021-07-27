@@ -150,16 +150,20 @@ $faqs = [
 
                         //* IF ITS NORMAL TXT
                         if($k == 'one' || $k == 'two'){ ?>
-                        
                         <!-- Normal text -->
                         <p><?php echo $a; ?></p>
-                
                 <?php
                         //close if + open else if
-                         }else if($k == 'list'){ ?>
-
+                        }else if($k == 'list'){ ?>
                             <ol>
-                                <li>ciao</li>
+                            <?php foreach($a as $numeric_li){ 
+                                    foreach($numeric_li as $li){ ?>
+                                    
+                                    <li> <?php  echo $li;
+                                    //close numeric li foreach
+                                    } ?>
+                                    </li>
+                            <?php } ?>
                             </ol>
                 <?php
                         //close else if list
