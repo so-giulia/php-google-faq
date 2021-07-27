@@ -133,7 +133,8 @@ $faqs = [
         <div class="container">
         <?php foreach ($faqs as $faq){ ?>
             <div class="faq">
-                ciauz
+                <h2><?php echo $faq['q']; ?></h2>
+                <p><?php echo nl2br($faq['a']); ?></p>
             </div>
         <?php  }  ?>
         </div>

@@ -104,7 +104,7 @@ a.nav-active:active{
 
 main{
     color:#3c4043;
-    padding:65px 0 30px 0;
+    padding:65px 0 40px 0;
 }
 
 .faq{
@@ -122,6 +122,7 @@ main{
 }
 
 .faq p{
+    font-weight: 300;
     line-height: 24px;
     padding-top: 20px;
 }
