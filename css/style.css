@@ -110,7 +110,7 @@ a.nav-active:active{
 main{
     color:#3c4043;
     padding:65px 0 40px 0;
-    margin-top:90px;
+    margin-top:120px;
 }
 
 .faq{
@@ -128,7 +128,8 @@ main{
 }
 
 .faq p{
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: lighter;
     line-height: 24px;
     padding-top: 20px;
 }
